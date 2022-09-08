@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+</head>
+<body>
+    <div>
+        <label for="ipt-product">Produto:</label>
+        <input type="text" id="ipt-product" placeholder="Informe o nome do produto.">
+        
+        <label for="ipt-qtd">Quantidade:</label>
+        <input type="number" id="ipt-qtd" step="1" min="1" value="1">
+
+        <button onclick="adicionar()">Adicionar</button>
+        <button onclick="limpar()">Limpar</button>
+    </div>
+    <br>
+    <div>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Produto</th>
+                    <th>Quantidade</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="lista">
+         
+            </tbody>
+        </table>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

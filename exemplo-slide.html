@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portifólio</title>
+        <script>
+            function cliqueNoBotao() {
+                alert("Clicou no botão!");
+            }
+
+            function mouseMoveBtn () {
+                const button = document.getElementById('btn-teste');
+                button.innerText = "Passou o mouse.";
+            }
+
+            function mouseLeaveBtn () {
+                const button = document.getElementById('btn-teste');
+                button.innerText = "Clique aqui!";
+            }
+        </script>
+    </head>
+    <body>
+        <h1>A Heading</h1>
+        <div id="minha-div">
+            <p>A paragraph</p>
+            <p class="hero">Texto</p>
+        </div>
+        <button onclick="cliqueNoBotao()" onmousemove="mouseMoveBtn()" onmouseleave="mouseLeaveBtn()" id="btn-teste">Clique aqui!</button>
+    </body>
+
+</html>
